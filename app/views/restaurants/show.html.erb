@@ -1,0 +1,13 @@
+<div class="container">
+<h1><%= @restaurant.name %></h1>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+
+<div class="back-link">
+  <%=link_to restaurants_path do %>
+    <i class="fas fa-undo-alt"></i>
+    Back to list
+  <% end %>
+</div>
+
+</div>

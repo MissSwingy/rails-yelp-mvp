@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1 class="text-center">Restaurants</h1>
+      <% @restaurants.each do |restaurant| %>
+        <%= link_to restaurant_path(restaurant) do %>
+          <div class="restaurant">
+            <h2><i class="fas fa-utensils"></i>&nbsp; &nbsp;<%= restaurant.name %></h2>
+          </div>
+        <% end %>
+      <% end %>
+    <div class="back-link">
+      <%=link_to new_restaurant_path do %>
+        <i class="fas fa-plus btn btn-primary"> Add a new restaurant</i>
+      <% end %>
+    </div>
+    </div>
+  </div>
+</div>
+
